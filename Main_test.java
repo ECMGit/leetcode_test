@@ -4,6 +4,8 @@ import findMedianSortedArrays.*;
 import java.io.IOException;
 
 import FizzBuzz.*;
+import removeDuplicates.*;
+
 
 public class Main_test {
     public static void main(String[] args) throws IOException {
@@ -27,12 +29,23 @@ public class Main_test {
 //        }
         //String result = new Solution_longestSubstring().longestPalindrome_1(sub);
         // System.out.print(result);
-        FizzBuzz fb = new FizzBuzz(0, 100);
-        fb.FizzBuzzRunner();
+
+//        FizzBuzz fb = new FizzBuzz(0, 100);
+//        fb.FizzBuzzRunner();
 //        if(a == b){
 //        System.out.print("yes");}
 //        else
 //            System.out.print("No");
+
+        int nums[] = {};
+        Solution_reDup sol = new Solution_reDup();
+        int removedup = sol.removeDuplicates(nums);
+        System.out.println(removedup);
+        for (int i = 0; i < removedup; i++) {
+            System.out.print(nums[i]+",");
+        }
+
+
 
     }
 }
